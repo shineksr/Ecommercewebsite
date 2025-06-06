@@ -19,3 +19,6 @@ const subCategorySchema = new mongoose.Schema({
 })
 
 const subCategoryModel = mongoose.model('subCategory',subCategorySchema)
+
+export default subCategoryModel;
+// This code defines a Mongoose schema and model for a "subCategory" in a MongoDB database.

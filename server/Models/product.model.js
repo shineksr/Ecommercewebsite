@@ -26,27 +26,27 @@ const productSchema = new mongoose.Schema({
     },
     stock:{
         type : Number,
-        default : []
+        default :0
     },
     price:{
         type : Number,
-        default : ""
+        default : 0
     },
     discount: {
         type :Number,
-        default : ""
+        default : null
     },
     description:{
         type :String,
-        default : []
+        default : ""
     },
     moreDetails:{
         type:Object,
-        default:[]
+        default:{}
     },
     publish:{
         type: Boolean,
-        default:""
+        default:true
     },
     createdAt:{
         type :Date,
@@ -58,4 +58,11 @@ const productSchema = new mongoose.Schema({
         type : ""
     }
 
+},{
+    timestamps:true
 })
+
+const productModel =mongoose.model('product',productSchema)
+
+export default productModel;
+// This code defines a Mongoose schema for a product model in a MongoDB database.

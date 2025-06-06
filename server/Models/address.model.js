@@ -1,11 +1,11 @@
 import mongoose from "mongoose"; 
 
-const addressSchema = new mangoose.Schema({
+const addressSchema = new mongoose.Schema({
     
 },{
     timestamps:true
 })
 
-const addressModel = mangoose.model('address',addressSchema)
+const addressModel = mongoose.model('address',addressSchema)
 
-export default addressModel
+export default addressModel;
